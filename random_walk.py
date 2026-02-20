@@ -26,29 +26,29 @@ while i < 1000:
     arr = np.append(arr,test)
     i += 1
 
-
-len(arr)
-x_values = np.array([])
-
 arr_mean = np.mean(arr)
 print("Mean of array:", f"{arr_mean:.2f}")
 
 arr_stf = np.std(arr)
 print("Standard deviation of array:", f"{arr_stf:.2f}")
 
+#add x values to plot
+len(arr)
+x_values = np.array([])
 for i in range(len(arr)):
     x_values = np.append(x_values,i)
 
-
-describe = pd.DataFrame(arr).describe()
+# Using pandas to get descriptive statistics of the array
+description = pd.DataFrame(arr).describe()
 print("Descriptive statistics of the array:")
-print(describe)
+print(description)
+
+
 
 plt.plot(x_values, arr)
 plt.axhline(y=arr_mean, color='red', linestyle='--', label=f'Mean: {arr_mean:.2f}')
 plt.legend()
 plt.show()
-
 
 
 
