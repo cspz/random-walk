@@ -115,5 +115,13 @@ def my_mean(x):
     mean = total / len(x)
     return mean    
 
+#for std
 
-print(my_mean(arr))
+def my_std(x):
+    total_2 = 0
+    mean = my_mean(x) # compute the mean outside the loop for efficiency
+    for value in x:
+        total_2 += (value - mean)**2
+    std = np.sqrt(1/len(x)*total_2) # also std ouside the loop for efficiency
+    return std
+
