@@ -47,6 +47,7 @@ print(description)
 
 plt.plot(x_values, arr)
 plt.axhline(y=arr_mean, color='red', linestyle='--', label=f'Mean: {arr_mean:.2f}')
+plt.axvline(x=len(arr)/2, color='black', linestyle='--')
 plt.legend()
 plt.show()
 
