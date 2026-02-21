@@ -1,3 +1,6 @@
+
+#part 1: RANDOM in NUMPY
+
 """
 Check the difference between radom module and np.random
 
@@ -49,4 +52,68 @@ print(rng.normal(5,2,4)) #size 4 around 5 with std 1
 x = np.arange(400)
 
 plt.plot(x,rng.standard_normal(400))
-plt.show()
+#plt.show()
+
+
+
+
+# part 2: SLICING ARRAYS AND MEAN,STD,MIN,MAX MANUALLY WITHOUT BUILT-IN FUNCTIONS
+
+size = 1001
+arr = np.arange(size)
+print(arr[1:5])
+arr_5=arr[0:5]
+print(len(arr_5))
+
+#with negative numers
+
+arr_last_2 = arr[-2:]
+print(arr_last_2)
+
+
+#MEAN: manual vs numpy built-in
+
+total = 0
+for i in range(len(arr)):
+    total +=  arr[i] 
+
+total2 = np.sum(arr) # alternatively can use numpy built-in sum 
+print(f"Total sum: {total:.1f}")     
+man_mean = total / len(arr)
+print(f"Manual mean: {man_mean:.1f}")
+mean = np.mean(arr)     
+print(f"Numpy mean: {mean:.1f}")
+
+#STD: manual vs numpy
+
+summa_2 = 0
+for i in range(len(arr)):
+    summa_2 += (arr[i] - mean)**2 
+
+
+std_man = np.sqrt(1/(len(arr)) * summa_2 )
+
+print(f"Manual std: {std_man:.2f}")
+
+print(f"Numpy std: {np.std(arr):.2f}")
+
+
+#TRY to turn my mean and std into functions
+
+def my_mean(x):
+    total = 0
+    for i in range(len(x)):
+        total += x[i]
+    mean = total / len(x)
+    return mean    
+
+#EVEN CLEANER
+def my_mean(x):
+    total = 0
+    for value in x:
+        total += value
+    mean = total / len(x)
+    return mean    
+
+
+print(my_mean(arr))
