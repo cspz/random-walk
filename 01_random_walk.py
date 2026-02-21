@@ -34,9 +34,8 @@ print("Standard deviation of array:", f"{arr_stf:.2f}")
 
 #add x values to plot
 len(arr)
-x_values = np.array([])
-for i in range(len(arr)):
-    x_values = np.append(x_values,i)
+x_values = np.arange(len(arr))
+
 
 # Using pandas to get descriptive statistics of the array
 description = pd.DataFrame(arr).describe()
@@ -50,6 +49,18 @@ plt.axhline(y=arr_mean, color='red', linestyle='--', label=f'Mean: {arr_mean:.2f
 plt.axvline(x=len(arr)/2, color='black', linestyle='--')
 plt.legend()
 plt.show()
+
+
+
+#test 2 - using a for loop instead of while loop
+# and using a list first and then converting to a numpy array at the end
+steps = []
+for _ in range(1000):
+    steps.append(rnd.uniform(-5, 5))
+
+x_values = np.arange(len(steps)) # format of np.arange is np.arange(stop) - generates array from 0 to stop value, or can be more specific using np.arange(start, stop, step)
+
+
 
 
 
