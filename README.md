@@ -1,8 +1,6 @@
-Project: Random Walk & Brownian Motion Simulator
-
 # Random Walk & Stochastic Simulation
 
-Small project to practice Python, numerical simulation, and data analysis using a physics-style approach.
+Small project to practice Python, numerical simulation, and data analysis.
 The goal is to simulate random walks, analyze their statistical properties, and visualize the results.  
 
 
