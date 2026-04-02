@@ -30,13 +30,6 @@ The goal is to simulate random walks, analyze their statistical properties, and 
 
 ---
 
-## First Milestone
-
-- Generate N random steps (+1 / -1)  
-- Compute cumulative position  
-- Plot position vs step number  
-
----
 
 ## Future Extensions
 
