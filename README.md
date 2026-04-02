@@ -6,6 +6,11 @@ Small project to practice Python, numerical simulation, and data analysis using 
 The goal is to simulate random walks, analyze their statistical properties, and visualize the results.  
 
 
+<div align="center">
+	<img src="docs/assets/rand-walk-gif.gif" alt="radar-room demo animation" width="100%">
+</div>
+
+
 ---
 
 ## Goals
