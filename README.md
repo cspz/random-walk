@@ -13,21 +13,8 @@ The goal is to simulate random walks, analyze their statistical properties, and 
 - Simulate 1D and 2D random walks  
 - Plot trajectories and distributions  
 - Compute mean, variance, and histograms  
-- Compare simulation results with theoretical expectations  
-- Build clean, reusable Python code  
 
----
 
-## Concepts to Look Up
-
-- Random walk  
-- Brownian motion  
-- Monte Carlo simulation  
-- NumPy arrays  
-- Cumulative sum  
-- Histograms  
-- Mean and variance  
-- Matplotlib plotting  
 
 ---
 
