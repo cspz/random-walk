@@ -45,7 +45,6 @@ The goal is to simulate random walks, analyze their statistical properties, and 
 - Multiple trajectories  
 - 2D random walk  
 - Time-series statistics  
-- Moving averages  
 - Simple stock-price style model  
 
 ---
